@@ -4,5 +4,5 @@ service:
   volumes:
     - /root/Transmission/:/config
     - /root/Transmission/:/data/
-  port:
+  ports:
     - 8080:3000
