@@ -1,0 +1,10 @@
+service:
+  image: dperson/transmission
+  environment:
+    - TRUSER:mengel_t
+    - TRPASSWD:Lourdes64
+  volumes:
+    - /root/Transmission/:/var/lib/transmission-daemon
+    - /root/Transmission/:/var/lib/transmission-daemon/info
+  ports: 
+   - 9091:9091
