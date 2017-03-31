@@ -1,8 +1,11 @@
 service:
-  image: linuxserver/plex
+  image: timhaak/plex
   privileged: true
+  environment:
+   - PLEX_USERNAME:magicthoto
+   - PLEX_PASSWORD:Lourdes64
   volumes:
     - /root/Transmission/:/config
     - /root/Transmission/:/data/
   ports:
-    - 3000:3000
+    - 32400:32400
