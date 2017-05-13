@@ -1,0 +1,7 @@
+service:
+  image: dperson/transmission
+  volumes:
+    - /root/Transmission/:/var/lib/transmission-daemon
+    - /root/Transmission/:/var/lib/transmission-daemon/info
+  ports: 
+   - 9091:9091
