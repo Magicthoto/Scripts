@@ -15,7 +15,7 @@ services:
       - 32413:32413/udp
       - 32414:32414/udp
     environment:
-      - PLEX_CLAIM=CLAIM-8CQVEZZLPSJJBVFU9DUA
+      - PLEX_CLAIM=<?>
       - ADVERTISE_IP=http://thomasmengelattevps.ddns.net:32400/
     hostname: PlexVPS
     volumes:
