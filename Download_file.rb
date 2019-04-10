@@ -2,7 +2,7 @@ require 'net/sftp'
 
 remote_dowload_path = './Transmission/Downloads/'
 
-Net::SFTP.start('thomasmengelattevps.ddns.net', 'root', :password => '&sxvJl}p') do |sftp|
+Net::SFTP.start('thomasmengelattevps.ddns.net', 'root', :password => 'password') do |sftp|
   sftp.dir.foreach("./Transmission/Downloads/") do |entry|
     if entry.name != '.' && entry.name != '..'
       if !File.exist?("#{entry.name}")
